@@ -40,8 +40,8 @@ document.addEventListener('aos:out', ({ detail }) => {
   console.log('animated out', detail);
 });
 
-document.addEventListener('aos:in:flower-img', ({ detail }) => {
-  console.log('THE FLOWERS HAVE ARRIVED');
+document.addEventListener('aos:in:fade-img', ({ detail }) => {
+  console.log('THE IMAGE HAVE ARRIVED');
 });
 
 export default App;
