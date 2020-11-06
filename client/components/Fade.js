@@ -6,7 +6,7 @@ const Fade = (props) => {
       <h1>FADE</h1>
       <div className="fade-container">
         <img
-          src="https://i.pinimg.com/564x/25/17/19/251719ab42c77e6948bc75ec3b031880.jpg"
+          src="https://i.pinimg.com/564x/5e/8b/d2/5e8bd23c2dfbabd892b1524261f440db.jpg"
           className="fade-image"
           data-aos="fade-right"
           data-aos-duration="6000"
@@ -16,8 +16,9 @@ const Fade = (props) => {
             className="fade-text"
             data-aos="fade-left"
             data-aos-duration="6000"
+            data-aos-id="flower-img"
           >
-            Flowers
+            Lorem Ipsum
           </h2>
           <p
             className="fade-text"

@@ -6,6 +6,7 @@ body {
     rgba(255, 205, 178, 1) 35%,
     rgba(109, 104, 117, 1) 100%
   );
+  color: #0d396e;
 }
 
 .app-container {
@@ -28,11 +29,19 @@ h1 {
   align-items: center;
 }
 
+.flip-pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .demo-box {
-  background-color: #83c5be;
+  display: flex;
+  flex-direction: column;
+}
+
+.flip-img {
+  width: 300px;
   margin: 20px;
-  height: 80px;
-  width: 100px;
 }
 
 .top-component {
@@ -62,5 +71,40 @@ h1 {
 
 .fade-text {
   margin: 20px;
-  color: #606c38;
+  color: #334364;
+  width: 300px;
+}
+
+.fade-image {
+  width: 300px;
+  margin: 20px;
+}
+
+.slide-box {
+  display: flex;
+  flex-direction: row;
+}
+.slide-img {
+  width: 300px;
+  margin: 20px;
+}
+
+.zoom-img {
+  width: 300px;
+  margin: 20px;
+}
+
+.spec-pics {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.spec-box p {
+  font-size: 30px;
 }

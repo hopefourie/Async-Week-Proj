@@ -6,6 +6,9 @@ import { Provider } from 'react-redux';
 import Fade from './components/Fade';
 import Flip from './components/Flip';
 import Welcome from './components/Welcome';
+import Zoom from './components/Zoom';
+import Slide from './components/Slide';
+import Specifications from './components/Specifications';
 
 class App extends Component {
   render() {
@@ -14,6 +17,9 @@ class App extends Component {
         <Welcome />
         <Fade />
         <Flip />
+        <Slide />
+        <Zoom />
+        <Specifications />
       </div>
     );
   }
@@ -25,5 +31,17 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('app')
 );
+
+document.addEventListener('aos:in', ({ detail }) => {
+  console.log('animated in', detail);
+});
+
+document.addEventListener('aos:out', ({ detail }) => {
+  console.log('animated out', detail);
+});
+
+document.addEventListener('aos:in:flower-img', ({ detail }) => {
+  console.log('THE FLOWERS HAVE ARRIVED');
+});
 
 export default App;
